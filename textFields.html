@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>textFields</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              Roboto: ["Roboto", "Arial"],
+            },
+            colors: {
+              //Brand Color
+              primary: "#3DCBB1",
+              secondary: "#FFD130",
+              //Color Shades
+              prm40: "#EC9792",
+              prm60: "#E56D67",
+              prm80: "#C42A22",
+              prm100: "#98211A",
+              //Object color
+              Black90: "#1B1B1B",
+              White90: "#F9F9F9",
+              Error: "#FE416D",
+              Warning: "#A04AE3",
+              Success: "00DDC0",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-Roboto">
+    <section class="px-[100px] py-[200px]">
+      <h1 class="font-bold text-black text-[80px] mb-[118px]">Text Fields</h1>
+      <p class="text-black/30 text-[40px] mb-[30px]">Line Form</p>
+
+      <div class="flex gap-10">
+        <div class="w-[282px] mt-[25px]">
+          <div class="relative">
+            <input
+              id="input-default-1"
+              type="text"
+              placeholder="Label"
+              class="w-full border-b border-Black90/10 focus:border-primary focus:outline-none text-Black90 placeholder-Black90/60"
+            />
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="absolute right-0 top-1/2 -translate-y-1/2"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M8 0.5C3.86 0.5 0.5 3.86 0.5 8C0.5 12.14 3.86 15.5 8 15.5C12.14 15.5 15.5 12.14 15.5 8C15.5 3.86 12.14 0.5 8 0.5ZM11.18 4.82C10.3025 3.9425 9.155 3.5 8 3.5V8L4.82 11.18C6.575 12.935 9.425 12.935 11.1875 11.18C12.9425 9.425 12.9425 6.575 11.18 4.82ZM2 8C2 11.315 4.685 14 8 14C11.315 14 14 11.315 14 8C14 4.685 11.315 2 8 2C4.685 2 2 4.685 2 8Z"
+                fill="#1B1B1B"
+                fill-opacity="0.1"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <div class="relative w-[282px]">
+          <label
+            class="block text-Black90/60 text-[14px] mb-1"
+            for="input-default-2"
+            >Label</label
+          >
+          <input
+            id="input-default-2"
+            type="text"
+            placeholder="Placeholder"
+            class="w-full border-b border-Black90/10 focus:outline-none text-Black90 placeholder-Black90/90"
+          />
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="absolute right-0 top-1/2 -translate-y-1/2"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M8 0.5C3.86 0.5 0.5 3.86 0.5 8C0.5 12.14 3.86 15.5 8 15.5C12.14 15.5 15.5 12.14 15.5 8C15.5 3.86 12.14 0.5 8 0.5ZM11.18 4.82C10.3025 3.9425 9.155 3.5 8 3.5V8L4.82 11.18C6.575 12.935 9.425 12.935 11.1875 11.18C12.9425 9.425 12.9425 6.575 11.18 4.82ZM2 8C2 11.315 4.685 14 8 14C11.315 14 14 11.315 14 8C14 4.685 11.315 2 8 2C4.685 2 2 4.685 2 8Z"
+              fill="#1B1B1B"
+              fill-opacity="0.1"
+            />
+          </svg>
+        </div>
+
+        <div class="relative w-[282px]">
+          <label
+            class="block text-Black90/60 text-[14px] mb-1"
+            for="input-default-3"
+            >Label</label
+          >
+          <input
+            id="input-default-3"
+            type="text"
+            placeholder="Placeholder"
+            class="w-full border-b border-Black90/10 focus:border-primary focus:outline-none text-Black90 placeholder-Black90/90"
+          />
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="absolute right-0 top-1/2 -translate-y-1/2"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M8 0.5C3.86 0.5 0.5 3.86 0.5 8C0.5 12.14 3.86 15.5 8 15.5C12.14 15.5 15.5 12.14 15.5 8C15.5 3.86 12.14 0.5 8 0.5ZM11.18 4.82C10.3025 3.9425 9.155 3.5 8 3.5V8L4.82 11.18C6.575 12.935 9.425 12.935 11.1875 11.18C12.9425 9.425 12.9425 6.575 11.18 4.82ZM2 8C2 11.315 4.685 14 8 14C11.315 14 14 11.315 14 8C14 4.685 11.315 2 8 2C4.685 2 2 4.685 2 8Z"
+              fill="#1B1B1B"
+              fill-opacity="0.1"
+            />
+          </svg>
+        </div>
+
+        <div class="w-[282px]">
+          <label
+            class="block text-Black90/60 text-[14px] mb-1"
+            for="input-error"
+            >Label</label
+          >
+          <div class="relative">
+            <input
+              id="input-error"
+              type="text"
+              value="Placeholder"
+              class="w-full border-b border-Error focus:outline-none text-Black90 placeholder-Black90/90"
+            />
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="absolute right-0 top-1/2 -translate-y-1/2"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M8 0.5C3.86 0.5 0.5 3.86 0.5 8C0.5 12.14 3.86 15.5 8 15.5C12.14 15.5 15.5 12.14 15.5 8C15.5 3.86 12.14 0.5 8 0.5ZM11.18 4.82C10.3025 3.9425 9.155 3.5 8 3.5V8L4.82 11.18C6.575 12.935 9.425 12.935 11.1875 11.18C12.9425 9.425 12.9425 6.575 11.18 4.82ZM2 8C2 11.315 4.685 14 8 14C11.315 14 14 11.315 14 8C14 4.685 11.315 2 8 2C4.685 2 2 4.685 2 8Z"
+                fill="#1B1B1B"
+                fill-opacity="0.1"
+              />
+            </svg>
+          </div>
+          <p class="text-Error text-[14px] mt-2">Error message here!</p>
+        </div>
+
+        <!-- Fifth Input (Disabled State) -->
+        <div class="relative w-[282px]">
+          <label
+            class="block text-Black90/10 text-[14px] mb-1"
+            for="input-default-5"
+            >Label</label
+          >
+          <input
+            id="input-default-5"
+            type="text"
+            placeholder="Placeholder"
+            class="w-full border-b border-Black90/10 focus:border-primary focus:outline-none text-Black90 placeholder-Black90/10"
+          />
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="absolute right-0 top-1/2 -translate-y-1/2"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M8 0.5C3.86 0.5 0.5 3.86 0.5 8C0.5 12.14 3.86 15.5 8 15.5C12.14 15.5 15.5 12.14 15.5 8C15.5 3.86 12.14 0.5 8 0.5ZM11.18 4.82C10.3025 3.9425 9.155 3.5 8 3.5V8L4.82 11.18C6.575 12.935 9.425 12.935 11.1875 11.18C12.9425 9.425 12.9425 6.575 11.18 4.82ZM2 8C2 11.315 4.685 14 8 14C11.315 14 14 11.315 14 8C14 4.685 11.315 2 8 2C4.685 2 2 4.685 2 8Z"
+              fill="#1B1B1B"
+              fill-opacity="0.1"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div class="relative w-[400px] my-10">
+        <input
+          type="text"
+          placeholder="Search for course"
+          class="w-full py-[8px] px-[12px] rounded-[3px] focus:outline-none placeholder-Black90/60 bg-white90 drop-shadow-lg"
+        />
+        <button
+          class="absolute inset-y-0 right-4 flex items-center text-gray-500"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="flex gap-10 items-center justify-center">
+        <!-- Calendar -->
+        <div>
+          <div
+            class="w-[344px] h-[331px] rounded-[18px] bg-white drop-shadow-lg px-[24px] py-[24px]"
+          >
+            <div class="mb-[24px] flex items-center justify-between">
+              <button>
+                <svg
+                  width="8"
+                  height="12"
+                  viewBox="0 0 8 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.00002 0.705022C6.81319 0.51777 6.55954 0.412537 6.29502 0.412537C6.0305 0.412537 5.77685 0.51777 5.59002 0.705022L1.00002 5.29502C0.61002 5.68502 0.61002 6.31502 1.00002 6.70502L5.59002 11.295C5.98002 11.685 6.61002 11.685 7.00002 11.295C7.39002 10.905 7.39002 10.275 7.00002 9.88502L3.12002 5.99502L7.00002 2.11502C7.38002 1.72502 7.38002 1.08502 7.00002 0.705022Z"
+                    fill="#080E2F"
+                  />
+                </svg>
+              </button>
+              <h2 class="font-bold text-4">Aug 2020</h2>
+              <button>
+                <svg
+                  width="8"
+                  height="12"
+                  viewBox="0 0 8 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.00002 0.710632C0.61002 1.10063 0.61002 1.73063 1.00002 2.12063L4.88002 6.00063L1.00002 9.88063C0.61002 10.2706 0.61002 10.9006 1.00002 11.2906C1.39002 11.6806 2.02002 11.6806 2.41002 11.2906L7.00002 6.70063C7.39002 6.31063 7.39002 5.68063 7.00002 5.29063L2.41002 0.700632C2.03002 0.320632 1.39002 0.320632 1.00002 0.710632Z"
+                    fill="#080E2F"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div
+              class="mb-[12px] grid grid-cols-7 flex gap-[15px] text-[14px] text-Black90/60"
+            >
+              <div>Mon</div>
+              <div>Tue</div>
+              <div>Wed</div>
+              <div>Thu</div>
+              <div>Fri</div>
+              <div>Sat</div>
+              <div>Sun</div>
+            </div>
+
+            <div
+              class="grid grid-cols-7 flex gap-[12px] text-[#838586] text-4 text-center"
+            >
+              <div class="text-Black90/10">29</div>
+              <div class="text-Black90/10">30</div>
+              <div class="text-Black90/10">31</div>
+              <div class="text-Black90/10">1</div>
+              <div class="text-Black90/10">2</div>
+              <div class="text-Black90/10">3</div>
+              <div class="text-Black90/10">4</div>
+              <div class="text-Black90/10">5</div>
+              <div class="text-Black90/10">6</div>
+              <div class="text-Black90/10">7</div>
+              <div class="text-Black90/10">8</div>
+              <div class="text-Black90/10">9</div>
+              <div class="text-Black90/90 font-bold">10</div>
+              <div>11</div>
+              <div>12</div>
+              <div>13</div>
+              <div class="bg-primary rounded-[3px]">
+                <div class="text-white font-bold">14</div>
+              </div>
+              <div>15</div>
+              <div>16</div>
+              <div>17</div>
+              <div>18</div>
+              <div>19</div>
+              <div>20</div>
+              <div>21</div>
+              <div>22</div>
+              <div>23</div>
+              <div>24</div>
+              <div>25</div>
+              <div>26</div>
+              <div>27</div>
+              <div>28</div>
+              <div>29</div>
+              <div>30</div>
+            </div>
+          </div>
+        </div>
+        <!-- --------- -->
+        <div class="flex gap-[40px]">
+          <div class="bg-white rounded-[18px] drop-shadow-lg w-[219px]">
+            <div
+              class="py-[10px] flex items-center justify-between px-[16px] text-Black90/90"
+            >
+              <p>Option 1</p>
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <mask
+                  id="mask0_1_526"
+                  style="mask-type: alpha"
+                  maskUnits="userSpaceOnUse"
+                  x="0"
+                  y="0"
+                  width="14"
+                  height="14"
+                >
+                  <rect width="14" height="14" fill="#26292B" />
+                </mask>
+                <g mask="url(#mask0_1_526)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M13.2011 1.88062C13.4511 2.08377 13.4891 2.45116 13.286 2.7012L5.70265 12.0345C5.59851 12.1627 5.44491 12.2407 5.27997 12.2492C5.11504 12.2578 4.95422 12.1959 4.83744 12.0792L0.754106 7.99583C0.5263 7.76803 0.5263 7.39868 0.754106 7.17087C0.981912 6.94307 1.35126 6.94307 1.57906 7.17087L5.20505 10.7969L12.3805 1.96551C12.5837 1.71547 12.9511 1.67746 13.2011 1.88062Z"
+                    fill="#3DCBB1"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div
+              class="py-[12px] flex items-center justify-between px-[16px] bg-primary text-white"
+            >
+              <p>Option 2</p>
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <mask
+                  id="mask0_1_530"
+                  style="mask-type: alpha"
+                  maskUnits="userSpaceOnUse"
+                  x="0"
+                  y="0"
+                  width="14"
+                  height="14"
+                >
+                  <rect width="14" height="14" fill="#26292B" />
+                </mask>
+                <g mask="url(#mask0_1_530)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M13.2011 1.88062C13.4511 2.08377 13.4891 2.45116 13.286 2.7012L5.70265 12.0345C5.59851 12.1627 5.44491 12.2407 5.27997 12.2492C5.11503 12.2578 4.95422 12.1959 4.83744 12.0792L0.754106 7.99583C0.5263 7.76803 0.5263 7.39868 0.754106 7.17087C0.981912 6.94307 1.35126 6.94307 1.57906 7.17087L5.20505 10.7969L12.3805 1.96551C12.5837 1.71547 12.9511 1.67746 13.2011 1.88062Z"
+                    fill="white"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div
+              class="py-[12px] flex items-center justify-between px-[16px] text-Black90/90"
+            >
+              <p>Option 3</p>
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <mask
+                  id="mask0_1_526"
+                  style="mask-type: alpha"
+                  maskUnits="userSpaceOnUse"
+                  x="0"
+                  y="0"
+                  width="14"
+                  height="14"
+                >
+                  <rect width="14" height="14" fill="#26292B" />
+                </mask>
+                <g mask="url(#mask0_1_526)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M13.2011 1.88062C13.4511 2.08377 13.4891 2.45116 13.286 2.7012L5.70265 12.0345C5.59851 12.1627 5.44491 12.2407 5.27997 12.2492C5.11504 12.2578 4.95422 12.1959 4.83744 12.0792L0.754106 7.99583C0.5263 7.76803 0.5263 7.39868 0.754106 7.17087C0.981912 6.94307 1.35126 6.94307 1.57906 7.17087L5.20505 10.7969L12.3805 1.96551C12.5837 1.71547 12.9511 1.67746 13.2011 1.88062Z"
+                    fill="#3DCBB1"
+                  />
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="bg-white rounded-[18px] drop-shadow-lg w-[133px]">
+            <div
+              class="py-[10px] flex items-center justify-between px-[14px] text-Black90/90"
+            >
+              <p>Option 1</p>
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <mask
+                  id="mask0_1_526"
+                  style="mask-type: alpha"
+                  maskUnits="userSpaceOnUse"
+                  x="0"
+                  y="0"
+                  width="14"
+                  height="14"
+                >
+                  <rect width="14" height="14" fill="#26292B" />
+                </mask>
+                <g mask="url(#mask0_1_526)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M13.2011 1.88062C13.4511 2.08377 13.4891 2.45116 13.286 2.7012L5.70265 12.0345C5.59851 12.1627 5.44491 12.2407 5.27997 12.2492C5.11504 12.2578 4.95422 12.1959 4.83744 12.0792L0.754106 7.99583C0.5263 7.76803 0.5263 7.39868 0.754106 7.17087C0.981912 6.94307 1.35126 6.94307 1.57906 7.17087L5.20505 10.7969L12.3805 1.96551C12.5837 1.71547 12.9511 1.67746 13.2011 1.88062Z"
+                    fill="#3DCBB1"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div
+              class="py-[10px] flex items-center justify-between px-[14px] bg-primary text-white"
+            >
+              <p>Option 2</p>
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <mask
+                  id="mask0_1_530"
+                  style="mask-type: alpha"
+                  maskUnits="userSpaceOnUse"
+                  x="0"
+                  y="0"
+                  width="14"
+                  height="14"
+                >
+                  <rect width="14" height="14" fill="#26292B" />
+                </mask>
+                <g mask="url(#mask0_1_530)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M13.2011 1.88062C13.4511 2.08377 13.4891 2.45116 13.286 2.7012L5.70265 12.0345C5.59851 12.1627 5.44491 12.2407 5.27997 12.2492C5.11503 12.2578 4.95422 12.1959 4.83744 12.0792L0.754106 7.99583C0.5263 7.76803 0.5263 7.39868 0.754106 7.17087C0.981912 6.94307 1.35126 6.94307 1.57906 7.17087L5.20505 10.7969L12.3805 1.96551C12.5837 1.71547 12.9511 1.67746 13.2011 1.88062Z"
+                    fill="white"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div
+              class="py-[10px] flex items-center justify-between px-[14px] text-Black90/90"
+            >
+              <p>Option 3</p>
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <mask
+                  id="mask0_1_526"
+                  style="mask-type: alpha"
+                  maskUnits="userSpaceOnUse"
+                  x="0"
+                  y="0"
+                  width="14"
+                  height="14"
+                >
+                  <rect width="14" height="14" fill="#26292B" />
+                </mask>
+                <g mask="url(#mask0_1_526)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M13.2011 1.88062C13.4511 2.08377 13.4891 2.45116 13.286 2.7012L5.70265 12.0345C5.59851 12.1627 5.44491 12.2407 5.27997 12.2492C5.11504 12.2578 4.95422 12.1959 4.83744 12.0792L0.754106 7.99583C0.5263 7.76803 0.5263 7.39868 0.754106 7.17087C0.981912 6.94307 1.35126 6.94307 1.57906 7.17087L5.20505 10.7969L12.3805 1.96551C12.5837 1.71547 12.9511 1.67746 13.2011 1.88062Z"
+                    fill="#3DCBB1"
+                  />
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="bg-white rounded-[18px] drop-shadow-lg w-[133px]">
+            <div
+              class="py-[10px] flex items-center justify-between px-[16px] text-Black90/90"
+            >
+              <p>Option 1</p>
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <mask
+                  id="mask0_1_526"
+                  style="mask-type: alpha"
+                  maskUnits="userSpaceOnUse"
+                  x="0"
+                  y="0"
+                  width="14"
+                  height="14"
+                >
+                  <rect width="14" height="14" fill="#26292B" />
+                </mask>
+                <g mask="url(#mask0_1_526)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M13.2011 1.88062C13.4511 2.08377 13.4891 2.45116 13.286 2.7012L5.70265 12.0345C5.59851 12.1627 5.44491 12.2407 5.27997 12.2492C5.11504 12.2578 4.95422 12.1959 4.83744 12.0792L0.754106 7.99583C0.5263 7.76803 0.5263 7.39868 0.754106 7.17087C0.981912 6.94307 1.35126 6.94307 1.57906 7.17087L5.20505 10.7969L12.3805 1.96551C12.5837 1.71547 12.9511 1.67746 13.2011 1.88062Z"
+                    fill="#3DCBB1"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div
+              class="py-[10px] flex items-center justify-between px-[16px] bg-primary text-white"
+            >
+              <p>Option 2</p>
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <mask
+                  id="mask0_1_530"
+                  style="mask-type: alpha"
+                  maskUnits="userSpaceOnUse"
+                  x="0"
+                  y="0"
+                  width="14"
+                  height="14"
+                >
+                  <rect width="14" height="14" fill="#26292B" />
+                </mask>
+                <g mask="url(#mask0_1_530)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M13.2011 1.88062C13.4511 2.08377 13.4891 2.45116 13.286 2.7012L5.70265 12.0345C5.59851 12.1627 5.44491 12.2407 5.27997 12.2492C5.11503 12.2578 4.95422 12.1959 4.83744 12.0792L0.754106 7.99583C0.5263 7.76803 0.5263 7.39868 0.754106 7.17087C0.981912 6.94307 1.35126 6.94307 1.57906 7.17087L5.20505 10.7969L12.3805 1.96551C12.5837 1.71547 12.9511 1.67746 13.2011 1.88062Z"
+                    fill="white"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div
+              class="py-[10px] flex items-center justify-between px-[16px] text-Black90/90"
+            >
+              <p>Option 3</p>
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <mask
+                  id="mask0_1_526"
+                  style="mask-type: alpha"
+                  maskUnits="userSpaceOnUse"
+                  x="0"
+                  y="0"
+                  width="14"
+                  height="14"
+                >
+                  <rect width="14" height="14" fill="#26292B" />
+                </mask>
+                <g mask="url(#mask0_1_526)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M13.2011 1.88062C13.4511 2.08377 13.4891 2.45116 13.286 2.7012L5.70265 12.0345C5.59851 12.1627 5.44491 12.2407 5.27997 12.2492C5.11504 12.2578 4.95422 12.1959 4.83744 12.0792L0.754106 7.99583C0.5263 7.76803 0.5263 7.39868 0.754106 7.17087C0.981912 6.94307 1.35126 6.94307 1.57906 7.17087L5.20505 10.7969L12.3805 1.96551C12.5837 1.71547 12.9511 1.67746 13.2011 1.88062Z"
+                    fill="#3DCBB1"
+                  />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- --------- -->
+        <div>
+          <div class="space-x-10">
+            <button
+              class="px-[16px] py-[8px] border-solid border-[1px] border-Black90/60 text-Black90/60 rounded-[12px] text-[14px]"
+            >
+              <p>Option</p>
+            </button>
+            <button
+              class="px-[16px] py-[8px] border-solid border-[1px] border-primary text-primary rounded-[12px] text-[14px]"
+            >
+              <p>Option</p>
+            </button>
+            <button
+              class="px-[16px] py-[8px] border-solid border-[1px] border-[#454849] text-[#454849] bg-[#454849]/10 rounded-[12px] text-[14px]"
+            >
+              <p>Option</p>
+            </button>
+          </div>
+
+          <div class="mt-10 space-x-10 mb-10">
+            <button
+              class="px-[8px] py-[4px] border-solid border-[1px] border-Black90/60 text-Black90/60 rounded-[10px] text-[12px]"
+            >
+              <p>Option</p>
+            </button>
+            <button
+              class="px-[8px] py-[4px] border-solid border-[1px] border-primary text-primary rounded-[10px] text-[12px]"
+            >
+              <p>Option</p>
+            </button>
+            <button
+              class="px-[8px] py-[4px] border-solid border-[1px] border-[#454849] text-[#454849] bg-[#454849]/10 rounded-[10px] text-[12px]"
+            >
+              <p>Option</p>
+            </button>
+          </div>
+
+          <div>
+            <div class="mb-10 space-x-10 flex">
+              <div
+                class="rounded-full border-solid border-[2px] border-[#C1C2C2] w-[18px] h-[18px]"
+              ></div>
+              <div
+                class="rounded-full border-solid border-[2px] border-primary w-[18px] h-[18px] flex justify-center items-center"
+              >
+                <div class="rounded-full bg-primary w-[10px] h-[10px]"></div>
+              </div>
+              <div
+                class="rounded-full border-solid border-[2px] border-[#454849] w-[18px] h-[18px]"
+              ></div>
+            </div>
+            <div class="space-x-10 flex">
+              <!-- Toggle 1 -->
+              <label class="relative inline-flex items-center cursor-pointer">
+                <input type="checkbox" class="sr-only peer" />
+                <div
+                  class="w-10 h-6 bg-gray-300 rounded-full peer peer-focus:ring-2 peer-focus:ring-teal-500 peer-checked:bg-teal-500"
+                ></div>
+                <span
+                  class="absolute top-1 left-1 w-4 h-4 bg-white border border-gray-300 rounded-full transition-all peer-checked:translate-x-4 peer-checked:border-teal-500"
+                ></span>
+              </label>
+
+              <!-- Toggle 2 -->
+              <label class="relative inline-flex items-center cursor-pointer">
+                <input type="checkbox" class="sr-only peer" />
+                <div
+                  class="w-10 h-6 bg-red-300 rounded-full peer peer-focus:ring-2 peer-focus:ring-teal-500 peer-checked:bg-teal-500"
+                ></div>
+                <span
+                  class="absolute top-1 left-1 w-4 h-4 bg-white border border-gray-300 rounded-full transition-all peer-checked:translate-x-4 peer-checked:border-gray-800"
+                ></span>
+              </label>
+
+              <!-- Toggle 3 -->
+              <label class="relative inline-flex items-center cursor-pointer">
+                <input type="checkbox" class="sr-only peer" checked />
+                <div
+                  class="w-10 h-6 bg-gray-800 rounded-full peer peer-focus:ring-2 peer-focus:ring-gray-500 peer-checked:bg-gray-300"
+                ></div>
+                <span
+                  class="absolute top-1 left-1 w-4 h-4 bg-black rounded-full transition-all peer-checked:translate-x-4 peer-checked:bg-gray-100"
+                ></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
