@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+              Roboto: ["Roboto", "Arial"],
+          },
+          colors: {
+            // brand color
+            primary: '#3DCBB1',
+            secondary: '#FFD130',
+            // color shades
+            P40: '#EC9792',
+            P60: '#E56D67',
+            P80: '#C42A22',
+            P100: '#98211A',
+            // Object color
+            Black90: '#1B1B1B90',
+            Black60: '#1B1B1B60',
+            Black30: '#1B1B1B10',
+            White90: '#F9F9F990',
+            White60: '#F9F9F960',
+            White30: '#F9F9F930',
+            Error:"#FE416D",
+            Warning:"#A04AE3",
+            Success:"#00DDC0",
+
+          }
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer components {
+        /* typegraphie  */
+        .text-1 { @apply text-[61px] }
+        .text-2 { @apply text-[48px] }
+        .text-3 { @apply text-[40px] }
+        .text-4 { @apply text-[32px] }
+        .text-5 { @apply text-[24px] }
+        .text-6 { @apply text-[20px] }
+        .text-7 { @apply text-[16px] }
+        .text-8 { @apply text-[12px] }
+
+        /* buttons */
+        button { @apply flex items-center justify-center gap-2 transition-all duration-200 ease-in-out }
+        button[disabled] { @apply bg-Black30 text-Black30 border-none hover:bg-Black30 cursor-not-allowed }
+        .btn-primary { @apply bg-primary text-white hover:bg-P80 }
+        .btn-secondary  { @apply border border-Black60 text-Black60 hover:bg-white }
+
+        /* Border Radius */
+        .rounded-1 { @apply rounded-[12px] }
+        .rounded-2 { @apply rounded-[14px] }
+        .rounded-3 { @apply rounded-[18px] }
+
+        /* button-size */
+        .btn-sm { @apply px-4 py-2 text-8 rounded-1 }
+        .btn-md { @apply px-4.5 py-2.5 text-7 rounded-2 }
+        .btn-lg { @apply px-6 py-3 text-6 rounded-3 }
+
+    }
+  </style>
+</head>
+
+<body class="lg:container lg:px-[120px] container px-5 text-Roboto">
+  <nav class="bg-Black30 py-2 flex items-center justify-between">
+    <img src="pictures/Logo.png" alt="logo">   
+    <div class="flex items-center">
+      <div class="relative w-[400px] mr-[29px]">
+        <input
+          type="text"
+          placeholder="Search for course"
+          class="w-full py-[8px] px-[12px] rounded-[3px] focus:outline-none placeholder-Black90/60 bg-White90 drop-shadow-lg"
+        />
+        <button class="absolute inset-y-0 right-4 flex items-center text-gray-500">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="flex items-center">
+        <p class="mr-[22px]">Become Instructor</p>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-[17px]">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.99609 3C1.99609 3.55 2.44609 4 2.99609 4H3.99609L7.59609 11.59L6.24609 14.03C5.51609 15.37 6.47609 17 7.99609 17H18.9961C19.5461 17 19.9961 16.55 19.9961 16C19.9961 15.45 19.5461 15 18.9961 15H7.99609L9.09609 13H16.5461C17.2961 13 17.9561 12.59 18.2961 11.97L21.8761 5.48C22.2461 4.82 21.7661 4 21.0061 4H6.20609L5.53609 2.57C5.37609 2.22 5.01609 2 4.63609 2H2.99609C2.44609 2 1.99609 2.45 1.99609 3ZM7.99609 18C6.89609 18 6.00609 18.9 6.00609 20C6.00609 21.1 6.89609 22 7.99609 22C9.09609 22 9.99609 21.1 9.99609 20C9.99609 18.9 9.09609 18 7.99609 18ZM16.0061 20C16.0061 18.9 16.8961 18 17.9961 18C19.0961 18 19.9961 18.9 19.9961 20C19.9961 21.1 19.0961 22 17.9961 22C16.8961 22 16.0061 21.1 16.0061 20Z" fill="#1B1B1B"/>
+      </svg>
+      </div>
+      <div class="flex items-center gap-[19.5px]">
+        <button class="btn-sm btn-secondary ">Login</button>
+        <button class="btn-sm btn-primary">
+        <svg width="16" height="16" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M13 2.16663C7.01999 2.16663 2.16666 7.01996 2.16666 13C2.16666 18.98 7.01999 23.8333 13 23.8333C18.98 23.8333 23.8333 18.98 23.8333 13C23.8333 7.01996 18.98 2.16663 13 2.16663ZM17.5933 8.40663C16.3258 7.13913 14.6683 6.49996 13 6.49996V13L8.40666 17.5933C10.9417 20.1283 15.0583 20.1283 17.6042 17.5933C20.1392 15.0583 20.1392 10.9416 17.5933 8.40663ZM4.33332 13C4.33332 17.7883 8.21166 21.6666 13 21.6666C17.7883 21.6666 21.6667 17.7883 21.6667 13C21.6667 8.21163 17.7883 4.33329 13 4.33329C8.21166 4.33329 4.33332 8.21163 4.33332 13Z" fill="white"/>
+        </svg>
+        Sign Up
+        </button>
+      </div>
+    </div>
+  </nav>
+  <section class="bg-[url('pictures/hero.png')] bg-cover bg-no-repeat bg-center rounded-2xl py-[77px] pl-[58px]">
+    <div class="flex gap-">
+      <div>
+        <h2 class="text-2 font-bold mb-2 text-white" >Learn something <br> new everyday</h2>
+        <p class="text-white">Become professionals and ready to join the world.</p>
+        <button class="btn-lg text-6 text-primary bg-white font-bold mt-10">Explore Phototgraphy</button>
+      </div>
+      <div class="flex items-end gap-[160px] ">
+          <div class="text-white">
+            <img src="pictures/Thumbnail.png" alt="profil">
+            <p>Jessica Wong</p>
+            <p>Photographer</p>
+          </div>
+          <div class="text-right text-white">
+            <p>Winner Photo 2017 Awards</p>
+            <p>Joined Klevr since 2006</p>
+          </div>
+        </div>
+    </div>
+  </section>
+
+
+</body>
+
+</html>
+
+<!-- <article class="flex flex-col w-3/12 max-md:ml-0 max-md:w-full">
+  <div class="flex flex-col w-full rounded-3xl max-md:mt-5">
+    <div class="flex flex-col max-w-full text-xs leading-none text-white rounded-3xl w-[285px]">
+      <div class="flex relative flex-col px-3 py-2.5 w-[285px] rounded-3xl aspect-[1.77]">
+        <img src="https://i.postimg.cc/CLBjrWhV/Placeholder-1.png" alt="Bootcamp  Vue.js Web Framework thumbnail" class="object-cover  absolute inset-0 size-full" />
+        <div class="relative gap-2 ">
+          <span class="overflow-hidden gap-2.5 self-stretch p-1 bg-teal-400 rounded-3xl">Best Seller</span>
+          <span class="overflow-hidden gap-2.5 self-stretch p-1 bg-purple-500 rounded-3xl">20% OFF</span>
+        </div>
+      </div>
+    </div>
+    <h3 class="mt-1 text-base leading-none text-black">Bootcamp  Vue.js Web Framework</h3>
+    <div class="flex gap-1 mt-1 max-w-full text-sm leading-none text-teal-400 w-[285px]">
+      <img  src="https://cdn.builder.io/api/v1/image/assets/TEMP/d7d51c1a565587299fa7c51dce428d392e9c0233e3d80d2418a66cadc705d050?placeholderIfAbsent=true&apiKey=0b69390d977a4a878ed863a38b2aa8dd" alt="" class="object-contain shrink-0 aspect-square w-[18px]" />
+      <span class="flex-auto w-[259px]">Kitani Studio</span>
+    </div>
+    <p class="mt-1 text-sm leading-5 text-zinc-900 text-opacity-90">
+      More than 8yr Experience as Illustrator. Learn how to becoming professional Illustrator Now...
+    </p>
+    <div class="flex relative flex-col px-16 mt-1 max-w-full text-sm leading-none whitespace-nowrap aspect-[6.778] text-zinc-900 text-opacity-60 w-[122px] max-md:pl-5">
+      <img  src="https://cdn.builder.io/api/v1/image/assets/TEMP/3c569bba-90e5-4232-9503-b98e6052a6f2?placeholderIfAbsent=true&apiKey=0b69390d977a4a878ed863a38b2aa8dd" alt="" class="object-cover absolute inset-0 size-full" />
+      <span>(1.2K)</span>
+    </div>
+    <div class="flex overflow-hidden gap-1 items-center self-start mt-1 whitespace-nowrap">
+      <span class="self-stretch my-auto text-xl leading-tight text-zinc-900 text-opacity-90">$24.92</span>
+      <span class="self-stretch my-auto text-base text-zinc-900 text-opacity-60">$32.90</span>
+    </div>
+  </div>
+</article> -->
