@@ -86,13 +86,17 @@
         .price-container { @apply flex overflow-hidden gap-1 items-center mt-[5px] }
         .current-price { @apply self-stretch my-auto text-5 font-bold text-Black90 }
         .original-price {@apply self-stretch my-auto text-6 text-Black60}        
-
+      /* Popular Instructor */
+        .name { @apply text-5 font-bold text-white}
+        .fonction{@apply text-white mt-2}
+        /* Define a reusable container class */
+        .full-bleed {@apply relative w-screen left-[50%] right-[50%] -ml-[50vw] -mr-[50vw];}
     }
   </style>
 </head>
 
-<body class="lg:container lg:px-[120px] container px-5 text-Roboto">
-  <nav class="py-2 flex items-center justify-between">
+<body class="text-Roboto">
+  <nav class="py-2 flex items-center justify-between lg:container lg:px-[120px] ">
     <img src="pictures/Logo.png" alt="logo">   
     <div class="flex items-center">       <div class="relative w-[400px] mr-[29px]">
         <input
@@ -133,7 +137,7 @@
       </div>
     </div>
   </nav>
-  <main>
+  <main class="lg:container lg:px-[120px] ">
     <section class="bg-[url('pictures/hero.png')] bg-cover bg-no-repeat bg-center rounded-2xl relative mt-10">
       <div class="bg-white/20 w-[34px] h-[81px] absolute inset-y-0 left-0 flex top-40 items-center justify-center">
         <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -638,15 +642,101 @@
         </article>
       </div>
     </section>
-    <section class="mt-10">
-      <div>
+    <section class="mt-10 mb-20">
+      <div class="mb-6">
         <p class="font-bold text-6 mb-2">Popular Instructor</p>
         <p class="text-Black60">We know the best things for You. Top picks for You.</p>
       </div>
-     
+      <div class="flex gap-12">
+        <div class="bg-[url('pictures/Instructor.png')] bg-cover bg-no-repeat bg-center w-[285px] h-[400px] relative ">
+          <div class="absolute inset-x-0 bottom-0 text-center mb-4">
+            <p class="name "> Alexander Bastian</p>
+            <p class="fonction">Expert Mobile Engineer</p>
+          </div>
+        </div>
+        <div class="bg-[url('pictures/Instructor2.png')] bg-cover bg-no-repeat bg-center w-[285px] h-[400px] relative ">
+          <div class="absolute inset-x-0 bottom-0 text-center mb-4">
+            <p class="name "> Labie Carthaline</p>
+            <p class="fonction">Expert Mobile Engineer</p>
+          </div>
+        </div>
+        <div class="bg-[url('pictures/Instructor3.png')] bg-cover bg-no-repeat bg-center w-[285px] h-[400px] relative ">
+          <div class="absolute inset-x-0 bottom-0 text-center mb-4">
+            <p class="name "> Jonathan Doe</p>
+            <p class="fonction">Expert Mobile Engineer</p>
+          </div>
+        </div>
+        <div class="bg-[url('pictures/Instructor4.png')] bg-cover bg-no-repeat bg-center w-[285px] h-[400px] relative ">
+          <div class="absolute inset-x-0 bottom-0 text-center mb-4">
+            <p class="name "> Kitani Sarasvati</p>
+            <p class="fonction">Expert Mobile Engineer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[url('pictures/Subheader.png')] bg-cover bg-no-repeat bg-center rounded-1 mb-20">
+          <div class="flex justify-between items-center py-[50px] px-[60px]">
+            <div>
+              <h2 class="text-4 font-bold mb-2 text-white">
+                Join and get amazing discount
+              </h2>
+              <p class="text-White60 text-5">
+                With our responsive themes and mobile and desktop apps
+              </p>
+            </div>
+            <div class="flex flex-col ml-5 w-[36%] max-md:ml-0 max-md:w-full">
+              <form class="flex gap-4  w-full ">
+                <div class="flex gap-10 px-3 py-2.5 rounded bg-White30">
+                  <label class="sr-only">Email Address</label>
+                  <input type="email" id="emailSubscribe" placeholder="Email Address" class="bg-transparent border-none text-White60" required />
+                </div>
+                <button type="submit" class="flex  justify-center items-center px-5 py-2.5 text-white bg-primary rounded font-bold">
+                  Subscribe
+                </button>
+              </form>
+          </div>
+          </div>
     </section>
   </main>
-
+    <footer class="max-w-none mx-0 flex flex-col bg-black pt-10 pl-[105px] ">
+        <div class="flex gap-[169px]">
+          <div>
+            <img src="pictures/Logo1.png" alt="logo">
+          </div>
+          <div>
+            <ul class="space-y-4 text-white">
+              <li>Web Programming</li>
+              <li>Mobile Programming</li>
+              <li>Java Beginner</li>
+              <li>PHP Beginner</li>
+            </ul>
+          </div>
+          <div>
+            <ul class="space-y-4 text-white">
+              <li>Adobe Illustrator</li>
+              <li>Adobe Photoshop</li>
+              <li>Design Logo</li>
+            </ul>
+          </div>
+          <div>
+            <ul class="space-y-4 text-white">
+              <li>Writing Course</li>
+              <li>Photography</li>
+              <li>Video Making</li>
+            </ul>
+          </div>
+          </div>
+        </div>
+        <hr class="mt-16 border-t border-White90 mr-[120px]">
+        <div class="flex justify-between my-6 mr-[120px]">
+          <p class="text-White90">Copyright © MyCourse.io 2024. All Rights Reserved</p>
+          <div class="flex gap-6 items-center">
+            <img src="pictures/Twitter.png" alt="">
+            <img src="pictures/Instagram.png" alt="">
+            <img src="pictures/Facebook.png" alt="">   
+          </div>
+        </div>
+    </footer>
 
 </body>
 
