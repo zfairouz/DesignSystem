@@ -50,6 +50,7 @@
         .text-6 { @apply text-[20px] }
         .text-7 { @apply text-[16px] }
         .text-8 { @apply text-[12px] }
+        .text-9 { @apply text-[14px] }
 
         /* buttons */
         button { @apply flex items-center justify-center gap-2 transition-all duration-200 ease-in-out }
@@ -62,6 +63,7 @@
         .rounded-1 { @apply rounded-[12px] }
         .rounded-2 { @apply rounded-[14px] }
         .rounded-3 { @apply rounded-[18px] }
+        .rounded-4 { @apply rounded-[24px]}
 
         /* button-size */
         .btn-sm { @apply px-4 py-2 text-8 rounded-1 }
@@ -69,7 +71,21 @@
         .btn-lg { @apply px-6 py-3 text-6 rounded-3 }
 
         /* Course Card Component */
-        
+        .course-card-container { @apply flex flex-col w-full rounded-4}
+        .course-thumbnail { @apply flex flex-col text-8  text-white rounded-4}
+        .thumbnail-image { @apply object-cover absolute }
+        .badge-container { @apply relative top-[-150px] left-2}
+        .badge { @apply overflow-hidden gap-2  p-1 rounded-full}
+        .badge-bestseller {@apply bg-Success }
+        .badge-discount {@apply bg-Warning }
+        .course-title {@apply  text-7 font-bold }
+        .studio-info { @apply flex items-center gap-1 mt-1  text-8 text-primary w-[285px] }
+        .studio-icon { @apply w-[12px]}
+        .course-description {@apply mt-1 text-9 text-Black90 w-[285px]}
+        .ratings-container { @apply flex relative mt-1 text-8 text-Black60 w-[122px] whitespace-nowrap aspect-[6.778] }
+        .price-container { @apply flex overflow-hidden gap-1 items-center mt-[5px] }
+        .current-price { @apply self-stretch my-auto text-5 font-bold text-Black90 }
+        .original-price {@apply self-stretch my-auto text-6 text-Black60}        
 
     }
   </style>
@@ -78,8 +94,7 @@
 <body class="lg:container lg:px-[120px] container px-5 text-Roboto">
   <nav class="py-2 flex items-center justify-between">
     <img src="pictures/Logo.png" alt="logo">   
-    <div class="flex items-center">
-      <div class="relative w-[400px] mr-[29px]">
+    <div class="flex items-center">       <div class="relative w-[400px] mr-[29px]">
         <input
           type="text"
           placeholder="Search for course"
@@ -168,8 +183,160 @@
         <p class="font-bold text-6 mb-2">More from Kitani Studio</p>
         <p class="text-Black60">We know the best things for You. Top picks for You.</p>
       </div>
-      <div>
+      <div class="flex flex-row mt-5 gap-12">
+        <article>
+          <div>
+            <div class="course-thumbnail">
+              <div>
+                <img src="pictures/card1.png" alt="card1">
+                <div class="badge-container">
+                  <span class="badge badge-bestseller">Best Seller</span>
+                  <span class="badge badge-discount">20% OFF</span>
+                </div>
+              </div>
+            </div>
+            <h3 class="course-title">VUE JS SCRATCH COURSE</h3>
+            <div class="studio-info">
+              <img 
+                src="pictures/personne.png"
+                alt="" 
+                class="   studio-icon " 
+              />
+              <span class="flex-auto w-[259px]">Kitani Studio</span>
+            </div>
+            <p class="course-description">
+              More than 8yr Experience as Illustrator. Learn how to becoming professional Illustrator Now...
+            </p>
+            <div class="ratings-container">
+              <img 
+                src="pictures/stars.png" 
+                alt="" 
+                class="object-cover " 
+              />
+              <span>(1.2K)</span>
+            </div>
+            <div class="price-container">
+              <span class="current-price">$24.92</span>
+              <span class="original-price">\$32.90</span>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div>
+            <div class="course-thumbnail">
+              <div>
+                <img src="pictures/card2.png" alt="card1">
+                <div class="badge-container">
+                  <span class="badge badge-bestseller">Best Seller</span>
+                  <span class="badge badge-discount">20% OFF</span>
+                </div>
+              </div>
+            </div>
+            <h3 class="course-title">VUE JS SCRATCH COURSE</h3>
+            <div class="studio-info">
+              <img 
+                src="pictures/personne.png"
+                alt="" 
+                class="   studio-icon " 
+              />
+              <span class="flex-auto w-[259px]">Kitani Studio</span>
+            </div>
+            <p class="course-description">
+              More than 8yr Experience as Illustrator. Learn how to becoming professional Illustrator Now...
+            </p>
+            <div class="ratings-container">
+              <img 
+                src="pictures/stars.png" 
+                alt="" 
+                class="object-cover " 
+              />
+              <span>(1.2K)</span>
+            </div>
+            <div class="price-container">
+              <span class="current-price">$24.92</span>
+              <span class="original-price">\$32.90</span>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div>
+            <div class="course-thumbnail">
+              <div>
+                <img src="pictures/card1.png" alt="card1">
+                <div class="badge-container">
+                  <span class="badge badge-bestseller">Best Seller</span>
+                  <span class="badge badge-discount">20% OFF</span>
+                </div>
+              </div>
+            </div>
+            <h3 class="course-title">VUE JS SCRATCH COURSE</h3>
+            <div class="studio-info">
+              <img 
+                src="pictures/personne.png"
+                alt="" 
+                class="   studio-icon " 
+              />
+              <span class="flex-auto w-[259px]">Kitani Studio</span>
+            </div>
+            <p class="course-description">
+              More than 8yr Experience as Illustrator. Learn how to becoming professional Illustrator Now...
+            </p>
+            <div class="ratings-container">
+              <img 
+                src="pictures/stars.png" 
+                alt="" 
+                class="object-cover " 
+              />
+              <span>(1.2K)</span>
+            </div>
+            <div class="price-container">
+              <span class="current-price">$24.92</span>
+              <span class="original-price">\$32.90</span>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div>
+            <div class="course-thumbnail">
+              <div>
+                <img src="pictures/card1.png" alt="card1">
+                <div class="badge-container">
+                  <span class="badge badge-bestseller">Best Seller</span>
+                  <span class="badge badge-discount">20% OFF</span>
+                </div>
+              </div>
+            </div>
+            <h3 class="course-title">VUE JS SCRATCH COURSE</h3>
+            <div class="studio-info">
+              <img 
+                src="pictures/personne.png"
+                alt="" 
+                class="   studio-icon " 
+              />
+              <span class="flex-auto w-[259px]">Kitani Studio</span>
+            </div>
+            <p class="course-description">
+              More than 8yr Experience as Illustrator. Learn how to becoming professional Illustrator Now...
+            </p>
+            <div class="ratings-container">
+              <img 
+                src="pictures/stars.png" 
+                alt="" 
+                class="object-cover " 
+              />
+              <span>(1.2K)</span>
+            </div>
+            <div class="price-container">
+              <span class="current-price">$24.92</span>
+              <span class="original-price">\$32.90</span>
+            </div>
+          </div>
+        </article>
 
+
+
+
+        
       </div>
     </section>
   </main>
@@ -178,4 +345,3 @@
 </body>
 
 </html>
-
